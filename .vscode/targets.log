@@ -1,0 +1,553 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Mar  4 15:19:11 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b3b42cf6-ea9a-43d7-be5f-158973c44e7f.sock
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+LC_NUMERIC = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/tangxiao
+# environment
+LC_ADDRESS = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 15)
+C_OBJS := 1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/node.o 3/linkedlist.o 3/nodelib.o 3/nodelibTest.o 3/linkedlistTest.o
+# environment
+JAVAHOME = /usr/lib/java/jdk1.6.0_41
+# makefile (from 'Makefile', line 20)
+ALL_TGTS := 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/nodelibTest 3/linkedlistTest
+# environment
+VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/tangxiao/open/pgee/data_structure
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/tangxiao/.config/Code/CachedData/3866c3553be8b268c8a7f8c0482c0c0177aa8bfa
+ 
+# makefile (from 'Makefile', line 22)
+DEPFILES := 1/rectangle.d 2/list.d 2/vector.d 2/stack.d 2/hanoi.d 2/queue.d 2/apqueue.d 2/Bankqueue.d 2/BankService.d 3/node.d 3/linkedlist.d 3/nodelib.d 3/nodelibTest.d 3/linkedlistTest.d
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.DXKBI1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+SPECMAN_DIR = /opt/cadence/INCISIVE151/components/sn/
+# makefile
+CURDIR := /home/tangxiao/open/pgee/data_structure
+# environment
+LM_LICENSE_FILE = /opt/cadence/license/cadence.dat
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 12)
+C_SRCS := 1/rectangle.c 2/list.c 2/vector.c 2/stack.c 2/hanoi.c 2/queue.c 2/apqueue.c 2/Bankqueue.c 2/BankService.c 3/node.c 3/linkedlist.c 3/nodelib.c 3/nodelibTest.c 3/linkedlistTest.c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=a6627644-362b-47a6-b5e2-cd245d3a4e39&iid=a6627644-362b-47a6-b5e2-cd245d3a4e39&sid=a6627644-362b-47a6-b5e2-cd245d3a4e39","uploadToServer":true}
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+VRST_HOME = /opt/cadence/INCISIVE151
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 1279493
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/tangxiao-Legion:@/tmp/.ICE-unix/1570,unix/tangxiao-Legion:/tmp/.ICE-unix/1570
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/tangxiao/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 16)
+OBJS :=  1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/node.o 3/linkedlist.o 3/nodelib.o 3/nodelibTest.o 3/linkedlistTest.o
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile (from 'Makefile', line 2)
+SHELL = /bin/bash
+# environment
+CLASSPATH = /usr/lib/java/jdk1.6.0_41/lib:/usr/lib/java/jdk1.6.0_41/jre/lib
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+LD_LIBRARY_PATH = /home/tangxiao/systemc/lib-linux64:/home/tangxiao/uvm-systemc/include//../lib-linux64:/opt/cadence/INCISIVE151/tools.lnx86/lib
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 18)
+ALL_OBJS :=  1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/node.o 3/linkedlist.o 3/nodelib.o 3/nodelibTest.o 3/linkedlistTest.o
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/tangxiao/.local/bin:/home/tangxiao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/java/jdk1.6.0_41/bin:/usr/lib/java/jdk1.6.0_41/jre/bin:/snap/bin:/opt/cadence/INCISIVE151/bin:/opt/cadence/INCISIVE151/tools.lnx86/bin:/opt/cadence/INCISIVE151/tools.lnx86/dfII/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_US:en
+# environment
+LC_MONETARY = en_US.UTF-8
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 10)
+CXX_SRCS := 
+# makefile (from 'Makefile', line 14)
+CXX_OBJS := 
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+INVOCATION_ID = 965b1372b1134117a2c73add71c3cb74
+# environment
+INCISIVDIR = /opt/cadence/INCISIVE151
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = tangxiao
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+SPECMAN_HOME = /opt/cadence/INCISIVE151/components/sn
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = tangxiao
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMC_HOME = /home/tangxiao/systemc
+# environment
+DISPLAY = :0
+# environment
+USER = tangxiao
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 1419
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 1279493
+# makefile (from 'Makefile', line 7)
+CXX_FLAGS := 
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = en_US.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+JOURNAL_STREAM = 8:30505
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/tangxiao
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-c6b51988-1.59.1-main.sock
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+PAPERSIZE = letter
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+UVM_SYSTEMC_INCLUDE = /home/tangxiao/uvm-systemc/include/
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 4)
+CXX = g++
+# makefile (from 'Makefile', line 5)
+CC = gcc
+# environment
+XLM_HOME = /home/tangxiao/open/Xcelium.18.03.004/xcelium.18.03.004.crack/XCELIUM.18.03.004
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 8)
+LD_FLAGS := 
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# variable set hash-table stats:
+# Load=135/1024=13%, Rehash=0, Collisions=9/182=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# 1 (device 66309, inode 7995406): 3 files, no impossibilities.
+# . (device 66309, inode 7995394): 7 files, no impossibilities.
+
+# 10 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+ 
+%.o: %.cc
+#  recipe to execute (from 'Makefile', line 29):
+	$(CXX) $(CXX_FLAGS) -c -o $@ $<
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 31):
+	$(CC) $(CXX_FLAGS) -c -o $@ $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+2/BankService.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+2/vector: 2/vector.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 40):
+	$(CC) $(LD_FLAGS) -o $@ 2/vector.o
+
+2/stack: 2/stack.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 43):
+	$(CC) $(LD_FLAGS) -o $@ 2/stack.o
+
+2/list: 2/list.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 37):
+	$(CC) $(LD_FLAGS) -o $@ 2/list.o
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-03-04 15:18:36.492027941
+#  File has been updated.
+#  Successfully updated.
+
+2/hanoi: 2/hanoi.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 46):
+	$(CC) $(LD_FLAGS) -o $@ 2/hanoi.o
+
+# Not a target:
+3/nodelib.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+2/Bankqueue.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 64):
+	rm -rf $(ALL_TGTS)
+	rm -rf $(ALL_OBJS)
+	rm -rf $(DEPFILES)
+
+# Not a target:
+2/hanoi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+2/queue: 2/queue.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 49):
+	$(CC) $(LD_FLAGS) -o $@ 2/queue.o
+
+# Not a target:
+2/vector.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+2/queue.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+3/linkedlist.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+3/linkedlistTest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+1/rectangle.o: 1/rectangle.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: '1/rectangle'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := 1/rectangle.o
+# automatic
+# * := 1/rectangle
+# automatic
+# < := 1/rectangle.c
+# automatic
+# + := 1/rectangle.c
+# automatic
+# % := 
+# automatic
+# ^ := 1/rectangle.c
+# automatic
+# ? := 1/rectangle.c
+# automatic
+# | := 
+# variable set hash-table stats:
+ 
+# Load=8/32=25%, Rehash=0, Collisions=3/15=20%
+#  recipe to execute (from 'Makefile', line 31):
+	$(CC) $(CXX_FLAGS) -c -o $@ $<
+
+# Not a target:
+2/apqueue.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+3/nodelibTest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/nodelibTest 3/linkedlistTest
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+3/linkedlistTest: 3/node.o 3/linkedlist.o 3/linkedlistTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) $(LD_FLAGS) -o $@ 3/node.o 3/linkedlist.o 3/linkedlistTest.o
+
+1/rectangle: 1/rectangle.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 34):
+	$(CC) $(LD_FLAGS) -o $@ 1/rectangle.o
+
+2/BankService: 2/Bankqueue.o 2/BankService.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 55):
+	$(CC) $(LD_FLAGS) -o $@ 2/Bankqueue.o 2/BankService.o
+
+# Not a target:
+3/node.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+3/nodelibTest: 3/node.o 3/nodelib.o 3/nodelibTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 58):
+	$(CC) $(LD_FLAGS) -o $@ 3/node.o 3/nodelib.o 3/nodelibTest.o
+
+2/apqueue: 2/apqueue.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(LD_FLAGS) -o $@ 2/apqueue.o
+
+# Not a target:
+2/list.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+2/stack.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+1/rectangle.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-21 20:38:59.086
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=31/1024=3%, Rehash=0, Collisions=0/84=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 44 / storage = 434 B / avg = 9 B
+# current buf: size = 8162 B / used = 434 B / count = 44 / avg = 9 B
+
+# strcache performance: lookups = 81 / hit rate = 45%
+# hash-table stats:
+# Load=44/8192=1%, Rehash=0, Collisions=0/81=0%
+# Finished Make data base on Fri Mar  4 15:19:11 2022
+
+ 
