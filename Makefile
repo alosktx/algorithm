@@ -5,11 +5,16 @@ CXX?=g++
 CC?=gcc
 
 CXX_FLAGS := 
+CC_FLAGS := -D PRINTJOB
 LD_FLAGS := 
 
 CXX_SRCS := 
 C_SRCS := 1/rectangle.c 2/list.c 2/vector.c 2/stack.c 2/hanoi.c 2/queue.c 2/apqueue.c 2/Bankqueue.c 2/BankService.c
-C_SRCS += 3/node.c 3/linkedlist.c 3/nodelib.c 3/nodelibTest.c 3/linkedlistTest.c
+C_SRCS += 3/3_1/node.c 3/3_1/linkedlist.c 3/3_1/nodelib.c 3/3_1/nodelibTest.c 3/3_1/linkedlistTest.c
+C_SRCS += 3/3_1/linkedstack.c 3/3_1/linkedstackTest.c
+C_SRCS += 3/3_1/linkedqueue.c 3/3_1/linkedqueueTest.c
+C_SRCS += 3/3_1/clnkqueue.c 3/3_1/clnkqueueTest.c
+C_SRCS += 3/3_1/spooler.c 3/3_1/spoolerTest.c
 
 CXX_OBJS := $(CXX_SRCS:%.cc=%.o)
 C_OBJS := $(C_SRCS:%.c=%.o)
@@ -17,7 +22,8 @@ OBJS := $(CXX_OBJS) $(C_OBJS)
 
 ALL_OBJS := $(OBJS)
 
-ALL_TGTS := 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/nodelibTest 3/linkedlistTest
+ALL_TGTS := 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService
+ALL_TGTS += 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/linkedqueueTest 3/3_1/clnkqueueTest 3/3_1/spoolerTest
 
 DEPFILES := $(ALL_OBJS:%.o=%.d)
 
@@ -28,7 +34,7 @@ all : $(ALL_TGTS)
 %.o: %.cc	
 	$(CXX) $(CXX_FLAGS) -c -o $@ $<
 %.o: %.c	
-	$(CC) $(CXX_FLAGS) -c -o $@ $<
+	$(CC) $(CC_FLAGS) -c -o $@ $<
 
 1/rectangle : 1/rectangle.o 
 	$(CC) $(LD_FLAGS) -o $@ 1/rectangle.o
@@ -54,11 +60,23 @@ all : $(ALL_TGTS)
 2/BankService: 2/Bankqueue.o 2/BankService.o 
 	$(CC) $(LD_FLAGS) -o $@ 2/Bankqueue.o 2/BankService.o
 
-3/nodelibTest: 3/node.o 3/nodelib.o 3/nodelibTest.o 
-	$(CC) $(LD_FLAGS) -o $@ 3/node.o 3/nodelib.o 3/nodelibTest.o
+3/3_1/nodelibTest: 3/3_1/node.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o
 
-3/linkedlistTest: 3/node.o 3/linkedlist.o 3/linkedlistTest.o 
-	$(CC) $(LD_FLAGS) -o $@ 3/node.o 3/linkedlist.o 3/linkedlistTest.o
+3/3_1/linkedlistTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o 
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o
+
+3/3_1/linkedstackTest: 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
+
+3/3_1/linkedqueueTest: 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o o
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
+
+3/3_1/clnkqueueTest: 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o
+
+3/3_1/spoolerTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o 
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
 
 clean:
 	rm -rf $(ALL_TGTS)

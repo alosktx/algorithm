@@ -2,6 +2,7 @@ make --dry-run --keep-going --print-directory
 make: Entering directory '/home/tangxiao/open/pgee/data_structure'
 cc  -c -o 1/rectangle.o 1/rectangle.c
 cc  -o 1/rectangle 1/rectangle.o
+ 
 cc  -c -o 2/list.o 2/list.c
 cc  -o 2/list 2/list.o
 cc  -c -o 2/vector.o 2/vector.c
@@ -15,11 +16,33 @@ cc  -o 2/queue 2/queue.o
 cc  -c -o 2/apqueue.o 2/apqueue.c
 cc  -o 2/apqueue 2/apqueue.o
 cc  -c -o 2/Bankqueue.o 2/Bankqueue.c
+ 
 cc  -c -o 2/BankService.o 2/BankService.c
 cc  -o 2/BankService 2/Bankqueue.o 2/BankService.o
+ 
 cc  -c -o 3/nodelib.o 3/nodelib.c
+ 
 cc  -c -o 3/nodelibTest.o 3/nodelibTest.c
+ 
 cc  -o 3/nodelibTest 3/node.o 3/nodelib.o 3/nodelibTest.o
-cc  -o 3/linkedlistTest 3/node.o 3/linkedlist.o 3/linkedlistTest.o
+ 
+cc  -c -o 3/linkedstack.o 3/linkedstack.c
+ 
+cc  -c -o 3/linkedstackTest.o 3/linkedstackTest.c
+ 
+cc  -o 3/linkedstackTest 3/linkedstack.o 3/linkedstackTest.o
+cc  -c -o 3/linkedqueue.o 3/linkedqueue.c
+ 
+cc  -c -o 3/linkedqueueTest.o 3/linkedqueueTest.c
+ 
+cc  -o 3/linkedqueueTest 3/linkedqueue.o 3/linkedqueueTest.o
+ 
+cc  -c -o 3/clnkqueue.o 3/clnkqueue.c
+cc  -c -o 3/clnkqueueTest.o 3/clnkqueueTest.c
+cc  -o 3/clnkqueueTest 3/clnkqueue.o 3/clnkqueueTest.o
+cc  -c -o 3/spooler.o 3/spooler.c
+cc  -c -o 3/spoolerTest.o 3/spoolerTest.c
+cc  -o 3/spoolerTest 3/node.o 3/linkedlist.o 3/spooler.o 3/spoolerTest.o
+ 
 make: Leaving directory '/home/tangxiao/open/pgee/data_structure'
  

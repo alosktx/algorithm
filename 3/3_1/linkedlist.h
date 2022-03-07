@@ -1,7 +1,8 @@
 #pragma once
 #include "node.h"
-enum boolean {FALSE,TRUE};
-typedef enum boolean Bool;
+#include "stdbool.h"
+// enum boolean {FALSE,TRUE};
+// typedef enum boolean Bool;
 struct linkedList{
     //指向表头的指针
     Node * front;
@@ -20,7 +21,7 @@ typedef struct linkedList LinkedList;
 //初始化单链表
 void InitLinkedList(LinkedList *);
 //判断表是否为空
-Bool IsEmpty(LinkedList *);
+bool IsEmpty(LinkedList *);
 //求当前结点后继, 将其设置为当前结点
 int NextINode(LinkedList *);
 //重定位当前结点
@@ -39,5 +40,3 @@ ElementType GetData(LinkedList *);
 void SetData(LinkedList *,ElementType item);
 //清空链表
 void Clear(LinkedList *);
-//打印链表
-void PrintList(LinkedList *);

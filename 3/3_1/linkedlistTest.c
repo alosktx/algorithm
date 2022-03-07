@@ -2,6 +2,15 @@
 #include<assert.h>
 #include "node.h"
 #include "linkedlist.h"
+void PrintList(LinkedList * L){
+    int i = 0;
+    while(i < L->size){
+        SetPosition(L, i++);
+        printf("%d ",GetData(L));
+    }
+    printf("\n");
+}
+
 int main(int argc, char const *argv[])
 {
     //链表声明及初始化*********************************

@@ -6,8 +6,8 @@ void InitLinkedList(LinkedList *L){
     L->position = -1;
 }
 
-Bool IsEmpty(LinkedList *L){
-    return (Bool)(L->size == 0);
+bool IsEmpty(LinkedList *L){
+    return (bool)(L->size == 0);
 }
 
 int NextINode(LinkedList *L){
@@ -190,14 +190,4 @@ void Clear(LinkedList *L){
     L->front = L->rear = L->prevPtr = L->currPtr = NULL;
     L->size = 0;
     L->position = -1;
-}
-
-//打印链表
-void PrintList(LinkedList * L){
-    int i = 0;
-    while(i < L->size){
-        SetPosition(L, i++);
-        printf("%d ",GetData(L));
-    }
-    printf("\n");
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include<stdlib.h>
 #include<stdio.h>
-typedef int ElementType;
+#include "mydefine.h"
 struct node{
     struct node *next;
     ElementType data;
