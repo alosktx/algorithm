@@ -36,7 +36,9 @@ void AddJob(Spooler * SP,ElementType * job){
     if(IsEmpty(SP->jobList))
         time(&(SP->lasttime));
     job->printedpages = 0;
-    SetPosition(SP->jobList,(SP->jobList)->size-1);
+    if(!IsEmpty(SP->jobList)){
+        SetPosition(SP->jobList,(SP->jobList)->size-1);
+    }
     //*job
     InsertIAfter(SP->jobList,*job);
 }

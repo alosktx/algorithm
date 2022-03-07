@@ -75,6 +75,7 @@ all : $(ALL_TGTS)
 3/3_1/clnkqueueTest: 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o
 
+#编译时需要加参数 CC_FLAGS ：= -D PRINTJOB
 3/3_1/spoolerTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o 
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
 

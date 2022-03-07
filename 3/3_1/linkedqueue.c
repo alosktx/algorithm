@@ -36,6 +36,6 @@ void ClearLQ(LinkedQueue * LQ){
     free(LQ);
 }
 //判队列是否为空
-Bool IsEmptyLQ(LinkedQueue * LQ){
-    return (Bool)(LQ->queue->size == 0);
+bool IsEmptyLQ(LinkedQueue * LQ){
+    return (bool)(LQ->queue->size == 0);
 }

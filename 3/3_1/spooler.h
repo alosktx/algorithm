@@ -6,7 +6,9 @@
 #define PRINTSPEED 50
 //更新打印队列的最小时间间隔
 #define DELTATIME 10
-// #define PRINTJOB
+#ifndef PRINTJOB
+    #define PRINTJOB
+#endif
 //模拟打印缓冲池
 struct spooler{
     //存放打印作业及状态的队列

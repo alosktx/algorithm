@@ -2,6 +2,10 @@
 #include <termios.h> 
 #include <unistd.h> 
 #include <fcntl.h> 
+
+// #include<time.h>
+// #include<ctype.h>
+// #define WAITTIME 20
  
 int kbhit(void) 
 { 
@@ -26,7 +30,20 @@ int kbhit(void)
  
 // int main(void) 
 // { 
-// while(!kbhit()) puts("Press a key!"); 
-// printf("You pressed '%c'!/n", getchar()); 
-// return 0; 
+//     // while(!kbhit()) puts("Press a key!"); 
+//     // printf("You pressed '%c'!/n", getchar()); 
+//     char response='L';
+//     time_t ctime;
+//     time_t btime;
+//     time(&btime);
+//     printf("\nPlease Enter letter: Add(A) List(L) Number(N) Quit(Q): \n");
+//     do{
+//         time(&ctime);
+//         // printf("%f",difftime(ctime,btime));       
+//         if(difftime(ctime,btime)>=WAITTIME)
+//             break;
+//     }while(!kbhit());
+//     response = (kbhit())? toupper(getchar()) : 'L';
+//     printf("%c\n",response);
+//     return 0; 
 // } 

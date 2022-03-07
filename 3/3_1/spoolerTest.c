@@ -5,9 +5,10 @@
 #include<time.h>
 #include"kbhit.h"
 #include "spooler.h"
-
 // #include<conio.h>
-#define WAITTIME 1000000
+
+//10秒未输入自动输入
+#define WAITTIME 10
 typedef PrintJob ElementType;
 int main(int argc, char const *argv[])
 {
@@ -16,49 +17,41 @@ int main(int argc, char const *argv[])
     char response='L';
     InitSpooler(SP);
     for(;response!='Q';){
-        // time_t ctime;
-        // time_t btime;
-        // time(&btime);
-        printf("\nPlease Enter letter: Add(A) List(L) Number(N) Quit(Q) ===> \n");
-        // do{
-        //     time(&btime);       
-        //     if(difftime(ctime,btime)>=WAITTIME)
-        //         break;
-        // }while(!kbhit());
-        // response = (kbhit())? toupper(getchar()) : 'L';
-        // if(kbhit()){
-        //     while((response = getchar())!='\n');
-        // }else{
-        //     response = 'L';
-        // }
+        time_t ctime;
+        time_t btime;
+        time(&btime);
+        printf("\nPlease Enter letter: Add(A/a) List(L/l) Number(N/n) Quit(Q/q)[ Don't need enter ] ===> \n");
+        do{
+            time(&ctime);       
+            if(difftime(ctime,btime)>=WAITTIME)
+                break;
+        }while(!kbhit());
+        response = (kbhit())? toupper(getchar()) : 'L';
 
         // response = toupper(getchar());
-        scanf("%c",&response);
-        response=toupper(response);
+        // scanf("%c",&response);
+        // response=toupper(response);
         switch (response)
         {
-        // case 'a':
         case 'A':
             printf("Please enter the filename: ");
             //&必要的
             scanf("%s",&(job->filename));
             printf("Please enter the totalpages: ");
             scanf("%d",&(job->totalpages));
+            getchar();
             AddJob(SP,job);
             break;
-        // case 'l':
         case 'L':
             ListJob(SP);
             break;
-        // case 'n':
         case 'N':
             NumberOfJobs(SP);
             break;
-        // case 'q':
         case 'Q':
             break;
         default:
-            // printf("Please enter invalid letter!\n");
+            printf("Please enter invalid letter!\n");
             break;
         }
     }

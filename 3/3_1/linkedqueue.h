@@ -15,4 +15,4 @@ ElementType LQFront(LinkedQueue *);
 //清除队列中的元素
 void ClearLQ(LinkedQueue *);
 //判队列是否为空
-Bool IsEmptyLQ(LinkedQueue *);
+bool IsEmptyLQ(LinkedQueue *);

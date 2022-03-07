@@ -1,48 +1,67 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/tangxiao/open/pgee/data_structure'
-cc  -c -o 1/rectangle.o 1/rectangle.c
+ 
+cc -D PRINTJOB -c -o 1/rectangle.o 1/rectangle.c
+ 
 cc  -o 1/rectangle 1/rectangle.o
  
-cc  -c -o 2/list.o 2/list.c
-cc  -o 2/list 2/list.o
-cc  -c -o 2/vector.o 2/vector.c
-cc  -o 2/vector 2/vector.o
-cc  -c -o 2/stack.o 2/stack.c
-cc  -o 2/stack 2/stack.o
-cc  -c -o 2/hanoi.o 2/hanoi.c
-cc  -o 2/hanoi 2/hanoi.o
-cc  -c -o 2/queue.o 2/queue.c
-cc  -o 2/queue 2/queue.o
-cc  -c -o 2/apqueue.o 2/apqueue.c
-cc  -o 2/apqueue 2/apqueue.o
-cc  -c -o 2/Bankqueue.o 2/Bankqueue.c
+cc -D PRINTJOB -c -o 2/list.o 2/list.c
  
-cc  -c -o 2/BankService.o 2/BankService.c
+cc  -o 2/list 2/list.o
+ 
+cc -D PRINTJOB -c -o 2/vector.o 2/vector.c
+ 
+cc  -o 2/vector 2/vector.o
+ 
+cc -D PRINTJOB -c -o 2/stack.o 2/stack.c
+ 
+cc  -o 2/stack 2/stack.o
+ 
+cc -D PRINTJOB -c -o 2/hanoi.o 2/hanoi.c
+ 
+cc  -o 2/hanoi 2/hanoi.o
+ 
+cc -D PRINTJOB -c -o 2/queue.o 2/queue.c
+ 
+cc  -o 2/queue 2/queue.o
+ 
+cc -D PRINTJOB -c -o 2/apqueue.o 2/apqueue.c
+ 
+cc  -o 2/apqueue 2/apqueue.o
+ 
+cc -D PRINTJOB -c -o 2/Bankqueue.o 2/Bankqueue.c
+ 
+cc -D PRINTJOB -c -o 2/BankService.o 2/BankService.c
+ 
 cc  -o 2/BankService 2/Bankqueue.o 2/BankService.o
  
-cc  -c -o 3/nodelib.o 3/nodelib.c
+cc -D PRINTJOB -c -o 3/3_1/nodelib.o 3/3_1/nodelib.c
  
-cc  -c -o 3/nodelibTest.o 3/nodelibTest.c
+cc -D PRINTJOB -c -o 3/3_1/nodelibTest.o 3/3_1/nodelibTest.c
  
-cc  -o 3/nodelibTest 3/node.o 3/nodelib.o 3/nodelibTest.o
+cc  -o 3/3_1/nodelibTest 3/3_1/node.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o
  
-cc  -c -o 3/linkedstack.o 3/linkedstack.c
+cc -D PRINTJOB -c -o 3/3_1/linkedlistTest.o 3/3_1/linkedlistTest.c
  
-cc  -c -o 3/linkedstackTest.o 3/linkedstackTest.c
+cc  -o 3/3_1/linkedlistTest 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o
  
-cc  -o 3/linkedstackTest 3/linkedstack.o 3/linkedstackTest.o
-cc  -c -o 3/linkedqueue.o 3/linkedqueue.c
+cc -D PRINTJOB -c -o 3/3_1/linkedstack.o 3/3_1/linkedstack.c
  
-cc  -c -o 3/linkedqueueTest.o 3/linkedqueueTest.c
+cc -D PRINTJOB -c -o 3/3_1/linkedstackTest.o 3/3_1/linkedstackTest.c
  
-cc  -o 3/linkedqueueTest 3/linkedqueue.o 3/linkedqueueTest.o
+cc  -o 3/3_1/linkedstackTest 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
  
-cc  -c -o 3/clnkqueue.o 3/clnkqueue.c
-cc  -c -o 3/clnkqueueTest.o 3/clnkqueueTest.c
-cc  -o 3/clnkqueueTest 3/clnkqueue.o 3/clnkqueueTest.o
-cc  -c -o 3/spooler.o 3/spooler.c
-cc  -c -o 3/spoolerTest.o 3/spoolerTest.c
-cc  -o 3/spoolerTest 3/node.o 3/linkedlist.o 3/spooler.o 3/spoolerTest.o
+cc -D PRINTJOB -c -o 3/3_1/linkedqueue.o 3/3_1/linkedqueue.c
+ 
+cc -D PRINTJOB -c -o 3/3_1/linkedqueueTest.o 3/3_1/linkedqueueTest.c
+ 
+make: *** No rule to make target 'o', needed by '3/3_1/linkedqueueTest'.
+ 
+cc -D PRINTJOB -c -o 3/3_1/clnkqueue.o 3/3_1/clnkqueue.c
+ 
+cc -D PRINTJOB -c -o 3/3_1/clnkqueueTest.o 3/3_1/clnkqueueTest.c
+ 
+cc  -o 3/3_1/clnkqueueTest 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o
  
 make: Leaving directory '/home/tangxiao/open/pgee/data_structure'
  
