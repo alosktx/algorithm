@@ -5,7 +5,7 @@ CXX?=g++
 CC?=gcc
 
 CXX_FLAGS := 
-CC_FLAGS := -D PRINTJOB
+CC_FLAGS := 
 LD_FLAGS := 
 
 CXX_SRCS := 
@@ -15,6 +15,9 @@ C_SRCS += 3/3_1/linkedstack.c 3/3_1/linkedstackTest.c
 C_SRCS += 3/3_1/linkedqueue.c 3/3_1/linkedqueueTest.c
 C_SRCS += 3/3_1/clnkqueue.c 3/3_1/clnkqueueTest.c
 C_SRCS += 3/3_1/spooler.c 3/3_1/spoolerTest.c
+C_SRCS += 3/3_1/cnode.c 3/3_1/clnklist.c 3/3_1/clnklistTest.c
+C_SRCS += 4/cmystring.c 4/cmystringTest.c
+C_SRCS += 5/sort.c 5/sortTest.c
 
 CXX_OBJS := $(CXX_SRCS:%.cc=%.o)
 C_OBJS := $(C_SRCS:%.c=%.o)
@@ -24,6 +27,9 @@ ALL_OBJS := $(OBJS)
 
 ALL_TGTS := 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService
 ALL_TGTS += 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/linkedqueueTest 3/3_1/clnkqueueTest 3/3_1/spoolerTest
+ALL_TGTS += 3/3_1/clnklistTest
+ALL_TGTS += 4/cmystringTest
+ALL_TGTS += 5/sortTest
 
 DEPFILES := $(ALL_OBJS:%.o=%.d)
 
@@ -66,11 +72,11 @@ all : $(ALL_TGTS)
 3/3_1/linkedlistTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o 
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o
 
-3/3_1/linkedstackTest: 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 
-	$(CC) $(LD_FLAGS) -o $@ 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
+3/3_1/linkedstackTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
 
-3/3_1/linkedqueueTest: 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o o
-	$(CC) $(LD_FLAGS) -o $@ 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
+3/3_1/linkedqueueTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
 
 3/3_1/clnkqueueTest: 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o
@@ -78,6 +84,15 @@ all : $(ALL_TGTS)
 #编译时需要加参数 CC_FLAGS ：= -D PRINTJOB
 3/3_1/spoolerTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o 
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
+
+3/3_1/clnklistTest: 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o
+
+4/cmystringTest: 4/cmystring.o 4/cmystringTest.o
+	$(CC) $(LD_FLAGS) -o $@ 4/cmystring.o 4/cmystringTest.o
+
+5/sortTest: 5/sort.o 5/sortTest.o
+	$(CC) $(LD_FLAGS) -o $@ 5/sort.o 5/sortTest.o
 
 clean:
 	rm -rf $(ALL_TGTS)

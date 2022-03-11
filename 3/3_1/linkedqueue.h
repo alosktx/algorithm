@@ -1,4 +1,5 @@
 #include "linkedlist.h"
+#include "mydefine.h"
 struct linkedQueue{
     LinkedList * queue;
 };

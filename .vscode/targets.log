@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Mar  7 16:10:08 2022
+# Make data base, printed on Thu Mar 10 15:25:48 2022
 
 # Variables
 
@@ -21,7 +22,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e288cde6-feb7-439f-8117-fb16cafd5163.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-58ea32cb-4388-4e60-836e-5dbd6064ebb5.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -36,12 +37,12 @@ MAKE_COMMAND := make
 QT_ACCESSIBILITY = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
-# makefile (from 'Makefile', line 20)
-C_OBJS := 1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 3/3_1/linkedlistTest.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
+# makefile (from 'Makefile', line 23)
+C_OBJS := 1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 3/3_1/linkedlistTest.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 3/3_1/spooler.o 3/3_1/spoolerTest.o 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o 4/cmystring.o 4/cmystringTest.o 5/sort.o 5/sortTest.o
 # environment
 JAVAHOME = /usr/lib/java/jdk1.6.0_41
-# makefile (from 'Makefile', line 26)
-ALL_TGTS := 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/linkedqueueTest 3/3_1/clnkqueueTest 3/3_1/spoolerTest
+# makefile (from 'Makefile', line 32)
+ALL_TGTS := 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/linkedqueueTest 3/3_1/clnkqueueTest 3/3_1/spoolerTest 3/3_1/clnklistTest 4/cmystringTest 5/sortTest
 # environment
 VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
 # environment
@@ -62,8 +63,8 @@ VSCODE_LOG_STACK = false
 %F = $(notdir $%)
 # environment
 VSCODE_CODE_CACHE_PATH = /home/tangxiao/.config/Code/CachedData/3866c3553be8b268c8a7f8c0482c0c0177aa8bfa
-# makefile (from 'Makefile', line 28)
-DEPFILES := 1/rectangle.d 2/list.d 2/vector.d 2/stack.d 2/hanoi.d 2/queue.d 2/apqueue.d 2/Bankqueue.d 2/BankService.d 3/3_1/node.d 3/3_1/linkedlist.d 3/3_1/nodelib.d 3/3_1/nodelibTest.d 3/3_1/linkedlistTest.d 3/3_1/linkedstack.d 3/3_1/linkedstackTest.d 3/3_1/linkedqueue.d 3/3_1/linkedqueueTest.d 3/3_1/clnkqueue.d 3/3_1/clnkqueueTest.d 3/3_1/spooler.d 3/3_1/spoolerTest.d
+# makefile (from 'Makefile', line 34)
+DEPFILES := 1/rectangle.d 2/list.d 2/vector.d 2/stack.d 2/hanoi.d 2/queue.d 2/apqueue.d 2/Bankqueue.d 2/BankService.d 3/3_1/node.d 3/3_1/linkedlist.d 3/3_1/nodelib.d 3/3_1/nodelibTest.d 3/3_1/linkedlistTest.d 3/3_1/linkedstack.d 3/3_1/linkedstackTest.d 3/3_1/linkedqueue.d 3/3_1/linkedqueueTest.d 3/3_1/clnkqueue.d 3/3_1/clnkqueueTest.d 3/3_1/spooler.d 3/3_1/spoolerTest.d 3/3_1/cnode.d 3/3_1/clnklist.d 3/3_1/clnklistTest.d 4/cmystring.d 4/cmystringTest.d 5/sort.d 5/sortTest.d
 # environment
 LANG = C
 # environment
@@ -94,8 +95,8 @@ MFLAGS = -pqrR
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
 .SHELLFLAGS := -c
-# makefile (from 'Makefile', line 17)
-C_SRCS := 1/rectangle.c 2/list.c 2/vector.c 2/stack.c 2/hanoi.c 2/queue.c 2/apqueue.c 2/Bankqueue.c 2/BankService.c 3/3_1/node.c 3/3_1/linkedlist.c 3/3_1/nodelib.c 3/3_1/nodelibTest.c 3/3_1/linkedlistTest.c 3/3_1/linkedstack.c 3/3_1/linkedstackTest.c 3/3_1/linkedqueue.c 3/3_1/linkedqueueTest.c 3/3_1/clnkqueue.c 3/3_1/clnkqueueTest.c 3/3_1/spooler.c 3/3_1/spoolerTest.c
+# makefile (from 'Makefile', line 20)
+C_SRCS := 1/rectangle.c 2/list.c 2/vector.c 2/stack.c 2/hanoi.c 2/queue.c 2/apqueue.c 2/Bankqueue.c 2/BankService.c 3/3_1/node.c 3/3_1/linkedlist.c 3/3_1/nodelib.c 3/3_1/nodelibTest.c 3/3_1/linkedlistTest.c 3/3_1/linkedstack.c 3/3_1/linkedstackTest.c 3/3_1/linkedqueue.c 3/3_1/linkedqueueTest.c 3/3_1/clnkqueue.c 3/3_1/clnkqueueTest.c 3/3_1/spooler.c 3/3_1/spoolerTest.c 3/3_1/cnode.c 3/3_1/clnklist.c 3/3_1/clnklistTest.c 4/cmystring.c 4/cmystringTest.c 5/sort.c 5/sortTest.c
 # environment
 WAYLAND_DISPLAY = wayland-0
 # environment
@@ -115,7 +116,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2968
+VSCODE_PID = 165649
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -136,8 +137,8 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 BREAKPAD_DUMP_LOCATION = /home/tangxiao/.config/Code/exthost Crash Reports
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 21)
-OBJS :=  1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 3/3_1/linkedlistTest.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
+# makefile (from 'Makefile', line 24)
+OBJS :=  1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 3/3_1/linkedlistTest.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 3/3_1/spooler.o 3/3_1/spoolerTest.o 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o 4/cmystring.o 4/cmystringTest.o 5/sort.o 5/sortTest.o
 # environment
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # makefile (from 'Makefile', line 2)
@@ -154,8 +155,8 @@ LD_LIBRARY_PATH = /home/tangxiao/systemc/lib-linux64:/home/tangxiao/uvm-systemc/
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
 SHLVL = 0
-# makefile (from 'Makefile', line 23)
-ALL_OBJS :=  1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 3/3_1/linkedlistTest.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
+# makefile (from 'Makefile', line 26)
+ALL_OBJS :=  1/rectangle.o 2/list.o 2/vector.o 2/stack.o 2/hanoi.o 2/queue.o 2/apqueue.o 2/Bankqueue.o 2/BankService.o 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o 3/3_1/linkedlistTest.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o 3/3_1/spooler.o 3/3_1/spoolerTest.o 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o 4/cmystring.o 4/cmystringTest.o 5/sort.o 5/sortTest.o
 # environment
 MAKELEVEL := 0
 # environment
@@ -174,7 +175,7 @@ LC_MONETARY = en_US.UTF-8
 ^F = $(notdir $^)
 # makefile (from 'Makefile', line 11)
 CXX_SRCS := 
-# makefile (from 'Makefile', line 19)
+# makefile (from 'Makefile', line 22)
 CXX_OBJS := 
 # environment
 LC_TIME = en_US.UTF-8
@@ -196,6 +197,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 ?F = $(notdir $?)
 # environment
 SPECMAN_HOME = /opt/cadence/INCISIVE151/components/sn
+ 
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
@@ -229,7 +231,7 @@ MANAGERPID = 1533
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2968
+GIO_LAUNCHED_DESKTOP_FILE_PID = 165649
 # makefile (from 'Makefile', line 7)
 CXX_FLAGS := 
 # environment
@@ -281,10 +283,9 @@ GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = en_US.UTF-8
 # makefile (from 'Makefile', line 8)
-CC_FLAGS := -D PRINTJOB
+CC_FLAGS := 
 # variable set hash-table stats:
- 
-# Load=136/1024=13%, Rehash=0, Collisions=9/193=5%
+# Load=136/1024=13%, Rehash=0, Collisions=9/205=4%
 
 # Pattern-specific Variable Values
 
@@ -295,16 +296,17 @@ CC_FLAGS := -D PRINTJOB
 # 1 (device 66309, inode 7995406): 3 files, no impossibilities.
 # . (device 66309, inode 7995394): 15 files, no impossibilities.
 
+ 
 # 18 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
 %.o: %.cc
-#  recipe to execute (from 'Makefile', line 35):
+#  recipe to execute (from 'Makefile', line 41):
 	$(CXX) $(CXX_FLAGS) -c -o $@ $<
 
 %.o: %.c
-#  recipe to execute (from 'Makefile', line 37):
+#  recipe to execute (from 'Makefile', line 43):
 	$(CC) $(CC_FLAGS) -c -o $@ $<
 
 # 2 implicit rules, 0 (0.0%) terminal.
@@ -317,7 +319,7 @@ CC_FLAGS := -D PRINTJOB
 #  File has not been updated.
 
 # Not a target:
-o:
+5/sort.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -338,12 +340,19 @@ o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 46):
+#  recipe to execute (from 'Makefile', line 52):
 	$(CC) $(LD_FLAGS) -o $@ 2/vector.o
 
 # Not a target:
 3/3_1/nodelibTest.o:
 #  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+5/sortTest.o:
+#  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -357,20 +366,20 @@ o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 49):
+#  recipe to execute (from 'Makefile', line 55):
 	$(CC) $(LD_FLAGS) -o $@ 2/stack.o
 
 2/list: 2/list.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 43):
+#  recipe to execute (from 'Makefile', line 49):
 	$(CC) $(LD_FLAGS) -o $@ 2/list.o
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-07 16:09:04.667255172
+#  Last modified 2022-03-10 15:25:17.677775052
 #  File has been updated.
 #  Successfully updated.
 
@@ -378,7 +387,7 @@ Makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 52):
+#  recipe to execute (from 'Makefile', line 58):
 	$(CC) $(LD_FLAGS) -o $@ 2/hanoi.o
 
 # Not a target:
@@ -387,6 +396,7 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 # Not a target:
 3/3_1/linkedlistTest.o:
 #  Implicit rule search has not been done.
@@ -410,7 +420,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 83):
+#  recipe to execute (from 'Makefile', line 98):
 	rm -rf $(ALL_TGTS)
 	rm -rf $(ALL_OBJS)
 	rm -rf $(DEPFILES)
@@ -425,7 +435,7 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 55):
+#  recipe to execute (from 'Makefile', line 61):
 	$(CC) $(LD_FLAGS) -o $@ 2/queue.o
 
 # Not a target:
@@ -438,15 +448,22 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 64):
+#  recipe to execute (from 'Makefile', line 70):
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/nodelib.o 3/3_1/nodelibTest.o
 
-3/3_1/linkedstackTest: 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
+3/3_1/linkedstackTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 70):
-	$(CC) $(LD_FLAGS) -o $@ 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
+#  recipe to execute (from 'Makefile', line 76):
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
+ 
+
+# Not a target:
+4/cmystring.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 2/queue.o:
@@ -458,11 +475,17 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 76):
+#  recipe to execute (from 'Makefile', line 82):
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/clnkqueue.o 3/3_1/clnkqueueTest.o
 
 # Not a target:
 3/3_1/clnkqueue.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+4/cmystringTest.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -486,20 +509,20 @@ clean:
 # automatic
 # ^ := 1/rectangle.c
 # automatic
+ 
 # ? := 1/rectangle.c
 # automatic
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=6/15=40%
-#  recipe to execute (from 'Makefile', line 37):
+#  recipe to execute (from 'Makefile', line 43):
 	$(CC) $(CC_FLAGS) -c -o $@ $<
 
 3/3_1/linkedlistTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 67):
- 
+#  recipe to execute (from 'Makefile', line 73):
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedlistTest.o
 
 # Not a target:
@@ -520,7 +543,7 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 
-all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/linkedqueueTest 3/3_1/clnkqueueTest 3/3_1/spoolerTest
+all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/linkedqueueTest 3/3_1/clnkqueueTest 3/3_1/spoolerTest 3/3_1/clnklistTest 4/cmystringTest 5/sortTest
 #  Phony target (prerequisite of .PHONY).
 #  Command line target.
 #  Implicit rule search has not been done.
@@ -530,6 +553,13 @@ all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 
+4/cmystringTest: 4/cmystring.o 4/cmystringTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 92):
+	$(CC) $(LD_FLAGS) -o $@ 4/cmystring.o 4/cmystringTest.o
+
 1/rectangle: 1/rectangle.o
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -537,22 +567,29 @@ all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
-#  recipe to execute (from 'Makefile', line 40):
+#  recipe to execute (from 'Makefile', line 46):
 	$(CC) $(LD_FLAGS) -o $@ 1/rectangle.o
 
 3/3_1/spoolerTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 80):
+#  recipe to execute (from 'Makefile', line 86):
 	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/spooler.o 3/3_1/spoolerTest.o
 
 2/BankService: 2/Bankqueue.o 2/BankService.o
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 61):
+#  recipe to execute (from 'Makefile', line 67):
 	$(CC) $(LD_FLAGS) -o $@ 2/Bankqueue.o 2/BankService.o
+
+# Not a target:
+3/3_1/clnklist.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 3/3_1/linkedqueue.o:
@@ -572,26 +609,32 @@ all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService
 #  Modification time never checked.
 #  File has not been updated.
 
-3/3_1/linkedqueueTest: 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o o
+3/3_1/linkedqueueTest: 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 73):
-	$(CC) $(LD_FLAGS) -o $@ 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
+#  recipe to execute (from 'Makefile', line 79):
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
 
 2/apqueue: 2/apqueue.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 58):
+#  recipe to execute (from 'Makefile', line 64):
 	$(CC) $(LD_FLAGS) -o $@ 2/apqueue.o
- 
 
 # Not a target:
 2/list.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+3/3_1/clnklistTest: 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 89):
+	$(CC) $(LD_FLAGS) -o $@ 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o
 
 # Not a target:
 3/3_1/linkedstackTest.o:
@@ -611,26 +654,46 @@ all: 1/rectangle 2/list 2/vector 2/stack 2/hanoi 2/queue 2/apqueue 2/BankService
 #  File has not been updated.
 
 # Not a target:
+ 
+3/3_1/cnode.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+3/3_1/clnklistTest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 1/rectangle.c:
 #  Implicit rule search has been done.
 #  Last modified 2022-02-21 20:38:59.086
 #  File has been updated.
 #  Successfully updated.
 
+5/sortTest: 5/sort.o 5/sortTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 95):
+	$(CC) $(LD_FLAGS) -o $@ 5/sort.o 5/sortTest.o
+
 # files hash-table stats:
-# Load=44/1024=4%, Rehash=0, Collisions=2/116=2%
+# Load=53/1024=5%, Rehash=0, Collisions=4/141=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 65 / storage = 730 B / avg = 11 B
-# current buf: size = 8162 B / used = 730 B / count = 65 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 74 / storage = 880 B / avg = 11 B
+# current buf: size = 8162 B / used = 880 B / count = 74 / avg = 11 B
 
-# strcache performance: lookups = 112 / hit rate = 41%
+# strcache performance: lookups = 131 / hit rate = 43%
 # hash-table stats:
-# Load=65/8192=1%, Rehash=0, Collisions=0/112=0%
-# Finished Make data base on Mon Mar  7 16:10:08 2022
+# Load=74/8192=1%, Rehash=0, Collisions=0/131=0%
+# Finished Make data base on Thu Mar 10 15:25:48 2022
 
  

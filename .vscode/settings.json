@@ -11,6 +11,8 @@
         "time.h": "c",
         "ctype.h": "c",
         "curses.h": "c",
-        "spooler.h": "c"
+        "spooler.h": "c",
+        "mydefine.h": "c",
+        "cnode.h": "c"
     }
 }
