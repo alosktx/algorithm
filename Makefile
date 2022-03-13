@@ -18,6 +18,7 @@ C_SRCS += 3/3_1/spooler.c 3/3_1/spoolerTest.c
 C_SRCS += 3/3_1/cnode.c 3/3_1/clnklist.c 3/3_1/clnklistTest.c
 C_SRCS += 4/cmystring.c 4/cmystringTest.c
 C_SRCS += 5/sort.c 5/sortTest.c
+C_SRCS += 7/binaryTreeNode.c 7/binarytree.c 7/binarytreeTest.c
 
 CXX_OBJS := $(CXX_SRCS:%.cc=%.o)
 C_OBJS := $(C_SRCS:%.c=%.o)
@@ -30,6 +31,7 @@ ALL_TGTS += 3/3_1/nodelibTest 3/3_1/linkedlistTest 3/3_1/linkedstackTest 3/3_1/l
 ALL_TGTS += 3/3_1/clnklistTest
 ALL_TGTS += 4/cmystringTest
 ALL_TGTS += 5/sortTest
+ALL_TGTS += 7/binarytreeTest
 
 DEPFILES := $(ALL_OBJS:%.o=%.d)
 
@@ -93,6 +95,10 @@ all : $(ALL_TGTS)
 
 5/sortTest: 5/sort.o 5/sortTest.o
 	$(CC) $(LD_FLAGS) -o $@ 5/sort.o 5/sortTest.o
+
+7/binarytreeTest: 7/binaryTreeNode.o 7/binarytree.o 7/binarytreeTest.o
+	$(CC) $(LD_FLAGS) -o $@ 7/binaryTreeNode.o 7/binarytree.o 7/binarytreeTest.o
+
 
 clean:
 	rm -rf $(ALL_TGTS)

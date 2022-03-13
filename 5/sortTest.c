@@ -106,5 +106,15 @@ int main(int argc, char const *argv[])
     p=NULL;
     free(MS);
 
+
+    printf("\n MergeSort()\n\n");
+    for(int i= 0;i<LENGTH;i++){
+        InitForSort(FS+i,rand()%LENGTH+1);
+    }
+    Printsort(FS,LENGTH);
+    MergeSort(FS,LENGTH);
+    Printsort(FS,LENGTH);
+    AssertSort(FS,LENGTH);
+
     return 0;
 }

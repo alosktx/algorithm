@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include<stdbool.h>
 #include<assert.h>
+#include<memory.h>
+#include<string.h>
 #include "mydefine.h"
 #include "sort.h"
 
@@ -12,6 +14,25 @@ void InitForSort(ForSort * FS, ElementType a){
 void Printsort(ForSort * FS, int len){
     for(int i = 0; i<len; i++){
         printf("%d ",FS[i].key);
+    }
+    printf("\n");
+}
+
+void PrintMergeSort(ForSort * FS, int len, int sublen){
+    int j = 0;
+    printf("[");
+    for(int i = 0;i<len;i++){
+        printf(" %d ",FS[i].key);
+        if(++j == sublen){
+            printf("] ");
+            j = 0;
+            if(i!=LENGTH-1){
+                printf("[");
+            }
+        }
+    }
+    if(len%sublen!=0){
+        printf("]");
     }
     printf("\n");
 }
@@ -221,18 +242,74 @@ void RadixAssignmentSort(MoreSort *MS, int clow, int chigh, int d){
 
 //归并排序
 //二路归并排序
+/*
+条件： len >= 0 且 n 为自然数（0,1,3......） 
+无需memcpy: 2^(2n-1) < len <= 2^(2n)
+需要memcpy: 2^(2n) < len <= 2^(2n+1)
+*/
 void MergeSort(ForSort A[],int len){
-
+    //声明临时数组B，与A一样的长度
+    ForSort * B = (ForSort*)malloc(sizeof(ForSort)*len);
+    //声明初始子文件长度sublen，代表下面要归并的原数组中的子文件的长度
+    int sublen = 1;
+    //A->B B->A循环归并 直到当前要归并的原数组的子文件的长度sublen >=len
+    while(sublen < len){
+        OnePassMerge(B,A,sublen,len);
+        sublen<<=1;
+        printf("now B sublen is %d\n",sublen);
+        PrintMergeSort(B,len,sublen);
+        printf("\n");
+        if(sublen < len){
+            OnePassMerge(A,B,sublen,len);
+            sublen<<=1;
+            printf("now A sublen is %d\n",sublen);
+            PrintMergeSort(A,len,sublen);
+            printf("\n");
+        }else{
+            memcpy(A,B,sizeof(ForSort)*len);
+            printf("the is memcpy now A is:\t");
+            PrintMergeSort(A,len,sublen);
+        }   
+    }
 }
 
-//一趟两组归并
-void OnePassMerge(ForSort Dst[], ForSort Src[], int Len, int n){
-
+//一整趟两组归并，指扫描完整个数组长度，将Src中 sublen长度的子文件归并到，Dst中为2*sublen 长度的子文件
+void OnePassMerge(ForSort Dst[], ForSort Src[], int sublen, int len){
+    //执行两组归并
+    int i;
+    for(i = 0; i<len-2*sublen;i+=2*sublen){
+        TwoWayMerge(Dst,Src,i,i+sublen-1,i+2*sublen-1);
+    }
+    //如果尾部还有两个子文件未处理，继续执行两组归并
+    if(i< len-sublen){
+        TwoWayMerge(Dst,Src,i,i+sublen-1,len-1);
+    }else{
+    //尾部还有一个子文件未处理,直接复制进Dst
+        memcpy(Dst+i,Src+i,sizeof(ForSort)*(len-i));
+    }
 }
 
-//两组归并
+//单次两两归并，将Src中从s开始到e1的子文件，和从e1+1开始到e2的子文件进行选择排序，结果从小到大存放在Dst中从s开始的位置
 void TwoWayMerge(ForSort Dst[], ForSort Src[], int s ,int e1, int e2){
-
+    //处理两组文件，直到把其中一组的文件处理完
+    int s1,s2;
+    for(s1=s,s2=e1+1; s1<=e1 && s2<=e2; ){
+        //第一个子文件元素的排序码小
+        if(Src[s1].key <= Src[s2].key){
+            Dst[s++] = Src[s1++];
+        }else{
+        //第二个子文件元素的排序码小
+            Dst[s++] = Src[s2++];
+        }
+    }
+    //一定会剩余一组文件未处理完，将这组文件剩余未处理的部分直接复制到Dst中
+    //第一组未处理完
+    if(s1<=e1){
+        memcpy(Dst+s,Src+s1,sizeof(ForSort)*(e1-s1 + 1));
+    }else{
+    //第二组未处理完
+        memcpy(Dst+s,Src+s2,sizeof(ForSort)*(e2-s2 + 1));
+    }
 }
 
 

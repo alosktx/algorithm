@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/tangxiao/open/pgee/data_structure'
 cc  -c -o 1/rectangle.o 1/rectangle.c
 cc  -o 1/rectangle 1/rectangle.o
@@ -29,7 +29,6 @@ cc  -c -o 3/3_1/linkedstackTest.o 3/3_1/linkedstackTest.c
 cc  -o 3/3_1/linkedstackTest 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedstack.o 3/3_1/linkedstackTest.o
 cc  -c -o 3/3_1/linkedqueue.o 3/3_1/linkedqueue.c
 cc  -c -o 3/3_1/linkedqueueTest.o 3/3_1/linkedqueueTest.c
- 
 cc  -o 3/3_1/linkedqueueTest 3/3_1/node.o 3/3_1/linkedlist.o 3/3_1/linkedqueue.o 3/3_1/linkedqueueTest.o
 cc  -c -o 3/3_1/clnkqueue.o 3/3_1/clnkqueue.c
 cc  -c -o 3/3_1/clnkqueueTest.o 3/3_1/clnkqueueTest.c
@@ -41,8 +40,15 @@ cc  -c -o 3/3_1/cnode.o 3/3_1/cnode.c
 cc  -c -o 3/3_1/clnklist.o 3/3_1/clnklist.c
 cc  -c -o 3/3_1/clnklistTest.o 3/3_1/clnklistTest.c
 cc  -o 3/3_1/clnklistTest 3/3_1/cnode.o 3/3_1/clnklist.o 3/3_1/clnklistTest.o
+cc  -c -o 4/cmystring.o 4/cmystring.c
 cc  -c -o 4/cmystringTest.o 4/cmystringTest.c
 cc  -o 4/cmystringTest 4/cmystring.o 4/cmystringTest.o
+cc  -c -o 5/sort.o 5/sort.c
+cc  -c -o 5/sortTest.o 5/sortTest.c
 cc  -o 5/sortTest 5/sort.o 5/sortTest.o
+cc  -c -o 7/binaryTreeNode.o 7/binaryTreeNode.c
+cc  -c -o 7/binarytree.o 7/binarytree.c
+cc  -c -o 7/binarytreeTest.o 7/binarytreeTest.c
+cc  -o 7/binarytreeTest 7/binaryTreeNode.o 7/binarytree.o 7/binarytreeTest.o
 make: Leaving directory '/home/tangxiao/open/pgee/data_structure'
  

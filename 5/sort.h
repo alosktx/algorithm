@@ -49,6 +49,6 @@ void RadixAssignmentSort(MoreSort * MS, int clow, int chigh, int d);
 //二路归并排序
 void MergeSort(ForSort A[],int len);
 //一趟两组归并
-void OnePassMerge(ForSort Dst[], ForSort Src[], int Len, int n);
+void OnePassMerge(ForSort Dst[], ForSort Src[], int sublen, int len);
 //两组归并
 void TwoWayMerge(ForSort Dst[], ForSort Src[], int s ,int e1, int e2);
