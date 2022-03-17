@@ -7,6 +7,12 @@ struct binaryTree{
 };
 typedef struct binaryTree BinaryTree;
 
+struct binarySTree
+{
+    BinaryTreeNode * root;
+};
+typedef struct binarySTree BinarySTree;
+
 struct binaryThreadTree{
     ThreadedBTNode * root;
 };

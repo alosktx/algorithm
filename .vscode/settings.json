@@ -13,6 +13,7 @@
         "curses.h": "c",
         "spooler.h": "c",
         "mydefine.h": "c",
-        "cnode.h": "c"
+        "cnode.h": "c",
+        "stdbool.h": "c"
     }
 }

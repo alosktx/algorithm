@@ -50,5 +50,14 @@ cc  -c -o 7/binaryTreeNode.o 7/binaryTreeNode.c
 cc  -c -o 7/binarytree.o 7/binarytree.c
 cc  -c -o 7/binarytreeTest.o 7/binarytreeTest.c
 cc  -o 7/binarytreeTest 7/binaryTreeNode.o 7/binarytree.o 7/binarytreeTest.o
+cc  -c -o 8/maxheap.o 8/maxheap.c
+cc  -c -o 8/maxheapTest.o 8/maxheapTest.c
+cc  -o 8/maxheapTest 8/maxheap.o 8/maxheapTest.o
+cc  -c -o 8/ufset.o 8/ufset.c
+cc  -c -o 8/ufsetTest.o 8/ufsetTest.c
+cc  -o 8/ufsetTest 8/ufset.o 8/ufsetTest.o
+cc  -c -o 9/graph.o 9/graph.c
+cc  -c -o 9/graphTest.o 9/graphTest.c
+cc  -o 9/graphTest 9/graph.o 9/graphTest.o
 make: Leaving directory '/home/tangxiao/open/pgee/data_structure'
  

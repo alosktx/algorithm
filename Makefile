@@ -19,6 +19,9 @@ C_SRCS += 3/3_1/cnode.c 3/3_1/clnklist.c 3/3_1/clnklistTest.c
 C_SRCS += 4/cmystring.c 4/cmystringTest.c
 C_SRCS += 5/sort.c 5/sortTest.c
 C_SRCS += 7/binaryTreeNode.c 7/binarytree.c 7/binarytreeTest.c
+C_SRCS += 8/maxheap.c 8/maxheapTest.c
+C_SRCS += 8/ufset.c 8/ufsetTest.c
+C_SRCS += 9/graph.c 9/graphTest.c
 
 CXX_OBJS := $(CXX_SRCS:%.cc=%.o)
 C_OBJS := $(C_SRCS:%.c=%.o)
@@ -32,6 +35,9 @@ ALL_TGTS += 3/3_1/clnklistTest
 ALL_TGTS += 4/cmystringTest
 ALL_TGTS += 5/sortTest
 ALL_TGTS += 7/binarytreeTest
+ALL_TGTS += 8/maxheapTest
+ALL_TGTS += 8/ufsetTest
+ALL_TGTS += 9/graphTest
 
 DEPFILES := $(ALL_OBJS:%.o=%.d)
 
@@ -98,6 +104,15 @@ all : $(ALL_TGTS)
 
 7/binarytreeTest: 7/binaryTreeNode.o 7/binarytree.o 7/binarytreeTest.o
 	$(CC) $(LD_FLAGS) -o $@ 7/binaryTreeNode.o 7/binarytree.o 7/binarytreeTest.o
+
+8/maxheapTest: 8/maxheap.o 8/maxheapTest.o
+	$(CC) $(LD_FLAGS) -o $@ 8/maxheap.o 8/maxheapTest.o
+
+8/ufsetTest: 8/ufset.o 8/ufsetTest.o
+	$(CC) $(LD_FLAGS) -o $@ 8/ufset.o 8/ufsetTest.o
+
+9/graphTest: 9/graph.o 9/graphTest.o
+	$(CC) $(LD_FLAGS) -o $@ 9/graph.o 9/graphTest.o
 
 
 clean:
