@@ -46,7 +46,7 @@ void DFS(Graph * g){
         visited[i] = false;
     }
     for(int i = 0;i<g->NumVertices; i++){
-        printf("fist ~~~~~~\n");
+        printf("fist ——>%d\n",i+1);
         if(!visited[i]){
             dfs(g, i ,visited);
         }

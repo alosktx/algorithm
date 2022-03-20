@@ -22,6 +22,8 @@ C_SRCS += 7/binaryTreeNode.c 7/binarytree.c 7/binarytreeTest.c
 C_SRCS += 8/maxheap.c 8/maxheapTest.c
 C_SRCS += 8/ufset.c 8/ufsetTest.c
 C_SRCS += 9/graph.c 9/graphTest.c
+C_SRCS += 9/prim.c 9/primTest.c
+C_SRCS += 9/dijkstra.c 9/dijkstraTest.c
 
 CXX_OBJS := $(CXX_SRCS:%.cc=%.o)
 C_OBJS := $(C_SRCS:%.c=%.o)
@@ -38,6 +40,8 @@ ALL_TGTS += 7/binarytreeTest
 ALL_TGTS += 8/maxheapTest
 ALL_TGTS += 8/ufsetTest
 ALL_TGTS += 9/graphTest
+ALL_TGTS += 9/primTest
+ALL_TGTS += 9/dijkstraTest
 
 DEPFILES := $(ALL_OBJS:%.o=%.d)
 
@@ -113,6 +117,12 @@ all : $(ALL_TGTS)
 
 9/graphTest: 9/graph.o 9/graphTest.o
 	$(CC) $(LD_FLAGS) -o $@ 9/graph.o 9/graphTest.o
+
+9/primTest: 9/prim.o 9/primTest.o
+	$(CC) $(LD_FLAGS) -o $@ 9/prim.o 9/primTest.o
+
+9/dijkstraTest: 9/dijkstra.o 9/dijkstraTest.o
+	$(CC) $(LD_FLAGS) -o $@ 9/dijkstra.o 9/dijkstraTest.o
 
 
 clean:
