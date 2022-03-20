@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/tangxiao/open/pgee/data_structure'
 cc  -c -o 1/rectangle.o 1/rectangle.c
 cc  -o 1/rectangle 1/rectangle.o
@@ -59,6 +59,9 @@ cc  -o 8/ufsetTest 8/ufset.o 8/ufsetTest.o
 cc  -c -o 9/graph.o 9/graph.c
 cc  -c -o 9/graphTest.o 9/graphTest.c
 cc  -o 9/graphTest 9/graph.o 9/graphTest.o
+cc  -c -o 9/prim.o 9/prim.c
+cc  -c -o 9/primTest.o 9/primTest.c
+cc  -o 9/primTest 9/prim.o 9/primTest.o
 cc  -c -o 9/dijkstra.o 9/dijkstra.c
 cc  -c -o 9/dijkstraTest.o 9/dijkstraTest.c
 cc  -o 9/dijkstraTest 9/dijkstra.o 9/dijkstraTest.o
